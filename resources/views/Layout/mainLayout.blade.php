@@ -34,16 +34,20 @@
 
     <!-- Start of body -->
     <div id="wrapper">
-asd
-
+        dsfsdfdsf
+        @section('name')
+        <div id="wrapper1">
+        @yield('name')
+        
+    </div>
     </div>
     <!-- Body end -->
     
     <footer>
     <div id="footerText">United States Capitol Police 119 D Street, NE Washington, DC 20510 (202) 224-1677
-        <div id="email">PIO@uscp.gov</div>
+    <div id="footerEmail">PIO@uscp.gov</div>
     </div>
-    <div id="links">
+    <div id="footerLinks">
     <a href="#">Accesebility</a>
     <a href="#">Copyring</a>
     <a href="#">Privacy</a>

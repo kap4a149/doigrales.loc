@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
-@import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee');
 
 *{
     margin:0;
     padding:0;
 }
 
-body{
-    background: rgb(226, 226, 226);
+html, body{
+    height: 90%;
 }
 
 a{
@@ -105,13 +105,46 @@ header{
     outline: none;
 }
 
+
 #wrapper{
-    height: 100%;
+    background:rgba(170, 167, 204, 0.274);
+    margin-bottom: 0px;
+    padding-bottom: 9.2%;
 }
 
 footer{
-    height: 260px;
-    background: black;
-    margin-top: 80%;
+    height: 150px;
+    background: white;
+}
 
+footer > #footerText{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 5%;
+    float: left;
+}
+
+footer > #footerText > #footerEmail{
+    text-decoration: underline;
+    color:rgb(55, 55, 100);
+}
+
+footer > #footerLinks{
+    width: 300px;
+    float: left;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+footer > #footerLinks > a{
+    
+    color: rgb(45, 0, 151);
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Mukta Mahee', sans-serif; 
+    text-decoration: underline;
+    float: left;
+    margin-right: 6%;
+    font-weight: bold;
 }

@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function index(){
-        return view('mainPage');
+        return view('Layout/mainLayout')->with($name = 'name');
     }
 }
