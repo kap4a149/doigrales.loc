@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: rgb(226, 226, 226);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    width:100%;
+    height: 235px;
+}
+
+#headerInfo{
+    margin: 2%;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(141, 40, 40);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#logo{
+    width: 85%;
+    height: 130px;
+    background-image: url('/images/logo.png');
+    background-size: cover;
+    margin-left: 7.5%;
+    background-size: 100% 100%;
+}
+
+#underLogo{
+    width: 100%;
+    height: 30px;
+    background-image: url('/images/under-logo.png');
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 11%;
+}
+
+#menu{
+    width: 100%;
+    height: 45px;
+    background: rgb(53, 46, 95);
+}
+
+#menuButtons{
+    margin-left: 5%;
+    float: left;
+}
+
+#menuButtons a{
+    float: left;
+    display: block;
+    padding: 10px 30px;
+    font-family: 'Oswald', sans-serif;
+    font-style: bold;
+    
+}
+
+#menuButtons a:hover{
+    background:rgb(36, 4, 78);
+    transition: all.5s ease;
+}
+
+#textArea{
+    float: left;
+    margin-left: 5%;
+}
+
+#textArea input[type="text"]{
+    margin-top: 2%;
+    width: 250px;
+    height: 30px;
+    border: 0.5px solid rgba(69, 62, 109, 0.438);
+    border-radius: 5px;
+}
+
+#textArea input[type="text"]:focus{
+    outline: none;
+    background:rgb(185, 223, 252);
+}
+
+#buttonSearch button{
+    width: 30px;
+    height: 30px;
+    margin-left: 0.5%;
+    margin-top: 0.35%;
+    background-image: url('/images/search-icon.png');
+    background-size: 100% 95%;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#buttonSearch button:focus{
+    outline: none;
+}
+
+#wrapper{
+    height: 100%;
+}
+
+footer{
+    height: 260px;
+    background: black;
+    margin-top: 80%;
+
+}
