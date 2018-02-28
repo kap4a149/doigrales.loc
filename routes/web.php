@@ -16,4 +16,7 @@
 // });
 
 // This is the main page
-Route::get('/', 'MainController@index');
+Route::get('/', 'MainController@mainPage')->name('home');
+
+//This is the departments page
+Route::get('/departments', 'MainController@departments')->name('departments');

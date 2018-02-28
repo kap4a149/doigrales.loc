@@ -8,7 +8,7 @@
 }
 
 html, body{
-    height: 90%;
+    height: 100%;
 }
 
 a{
@@ -18,34 +18,28 @@ a{
 
 header{
     width:100%;
-    height: 235px;
+    height: 175px;
+    background-image: url('/images/header_background.jpg');
+    background-size: 100% 100%;
 }
 
-#headerInfo{
-    margin: 2%;
+#headerInfo{  
+    padding-top: 2%;
     text-align: center;
     font-size: 1.2em;
-    color: rgb(141, 40, 40);
+    color: rgb(255, 0, 0);
     font-family: 'Titillium Web', sans-serif;
 }
 
 #logo{
-    width: 85%;
-    height: 130px;
-    background-image: url('/images/logo.png');
+    width: 800px;
+    height: 100px;
+    background-image: url('/images/police_logo.png');
     background-size: cover;
-    margin-left: 7.5%;
-    background-size: 100% 100%;
+    margin-left: 20%;
+    background-size: 100% 120%;
 }
 
-#underLogo{
-    width: 100%;
-    height: 30px;
-    background-image: url('/images/under-logo.png');
-    background-size: 100% 100%;
-    float: left;
-    margin-top: 11%;
-}
 
 #menu{
     width: 100%;
@@ -64,12 +58,18 @@ header{
     padding: 10px 30px;
     font-family: 'Oswald', sans-serif;
     font-style: bold;
+    transition: all 3s ease;
     
 }
 
-#menuButtons a:hover{
-    background:rgb(36, 4, 78);
-    transition: all.5s ease;
+#menuButtons a:nth-child(1n):hover{
+    background:rgb(247, 34, 34);
+    transition: all 0.30s ease;
+}
+
+#menuButtons a:nth-child(2n):hover{
+    background:rgb(8, 0, 117);
+    transition: all 0.30s ease;
 }
 
 #textArea{
@@ -106,10 +106,9 @@ header{
 }
 
 
-#wrapper{
-    background:rgba(170, 167, 204, 0.274);
+.wrapper{
+    background:rgba(170, 167, 204, 0.062);
     margin-bottom: 0px;
-    padding-bottom: 9.2%;
 }
 
 footer{
@@ -119,7 +118,7 @@ footer{
 
 footer > #footerText{
     width: 200px;
-    height: 100px;
+    height: 150px;
     text-align: center;
     margin-left: 20%;
     margin-top: 5%;
@@ -141,10 +140,72 @@ footer > #footerLinks{
 footer > #footerLinks > a{
     
     color: rgb(45, 0, 151);
-    font-family: 'Oswald', sans-serif;
     font-family: 'Mukta Mahee', sans-serif; 
     text-decoration: underline;
     float: left;
     margin-right: 6%;
     font-weight: bold;
 }
+
+
+
+/* This is a start of a mainPage.blade.php */
+#bigPhoto{
+    width: 100%;
+    height: 520px;
+    background-image: url('/images/mainPage/logo.jpg');
+    background-size: 100% 100%;
+}
+
+#emergencyText{
+    font-family: 'Mukta Mahee', sans-serif;     
+    color: rgb(146, 68, 68);
+    font-size: 1.3em;
+    font-weight: bold;
+    float: right;
+    margin-right: 11%; 
+    margin-top: 1%;
+}
+
+#bigBlock{
+    width: 95%;
+    height: 420px;
+    margin-left: 2.5%;
+    margin-top: 5%;
+}
+
+.navigationBlocks{
+    width:340px;
+    height: 300px;
+    border: 1px solid blue;
+    margin-left: 4.5%;
+    margin-top: 4%;
+    float: left;
+}
+
+.topOfSmallBlocks{
+    width: 340px;
+    height: 50px;
+    background:rgb(45, 51, 131);
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'Mukta Mahee', sans-serif;   
+}
+
+.smallBlocks{
+    width: 340px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.smallBlocks:hover{
+    opacity: 1;
+}
+
+.smallBlocks > a > img{
+    width: 340px;
+    height: 235px;
+}
+

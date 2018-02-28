@@ -20,8 +20,8 @@
     <!-- Start of menu -->
     <div id="menu">
         <div id="menuButtons">
-        <a href="#">Home</a>
-        <a href="#">The Department</a>
+        <a href=" {{ route('home') }} ">Home</a>
+        <a href=" {{ route('departments') }} ">The Departments</a>
         <a href="#">Careers</a>
         <a href="#">Media Center</a>
         <a href="#">Visiting Capitol Hill</a>
@@ -33,19 +33,15 @@
     <!-- end of menu -->
 
     <!-- Start of body -->
-    <div id="wrapper">
-        dsfsdfdsf
-        @section('name')
-        <div id="wrapper1">
-        @yield('name')
-        
+    <div class="wrapper">
+        @yield('content')
     </div>
     </div>
     <!-- Body end -->
     
     <footer>
-    <div id="footerText">United States Capitol Police 119 D Street, NE Washington, DC 20510 (202) 224-1677
-    <div id="footerEmail">PIO@uscp.gov</div>
+    <div id="footerText">US Capitol Police, NE Washington, DC 21300 (200) 117-2624
+    <div id="footerEmail">zesen@gmail.com</div>
     </div>
     <div id="footerLinks">
     <a href="#">Accesebility</a>
