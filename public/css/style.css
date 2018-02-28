@@ -194,6 +194,10 @@ footer > #footerLinks > a{
     font-family: 'Mukta Mahee', sans-serif;   
 }
 
+.topOfSmallBlocks > a:hover{
+    text-decoration: underline;
+}
+
 .smallBlocks{
     width: 340px;
     height: 250px;
