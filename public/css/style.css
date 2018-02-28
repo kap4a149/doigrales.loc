@@ -209,3 +209,51 @@ footer > #footerLinks > a{
     height: 235px;
 }
 
+
+
+/* Start of departments.blade.php */
+table{
+    margin-top: 2%;
+    margin-left: 10%;
+    border-spacing: 0px 0px;    
+    text-align: center;
+}
+.table_row{
+}
+
+.column_names{  
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(43, 63, 60);
+    background: rgb(90, 124, 139);
+    text-transform: uppercase;
+    color:rgb(2, 255, 36);    
+}
+
+.table_cell_id,
+.table_cell_name,
+.table_cell_phone_number
+{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(43, 63, 60);
+    background:rgba(117, 111, 117, 0.355);
+    color:rgb(0, 20, 24);
+
+}
+
+.table_cell_work_time_from{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(43, 63, 60);
+    background:rgba(20, 151, 70, 0.295);
+    color:rgb(0, 20, 24);
+}
+
+.table_cell_work_time_to{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(43, 63, 60);
+    background:rgba(209, 5, 5, 0.355);
+    color:rgb(0, 20, 24);
+}

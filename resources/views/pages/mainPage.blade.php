@@ -7,8 +7,8 @@
 <div id="emergencyText">In an emergency, call 911 from a landline</div>
 <div id="bigBlock">
     <div class="navigationBlocks">
-    <div class="topOfSmallBlocks"><a href="#">Departments</a></div>
-    <div class="smallBlocks"><a href="#"> <img src="/images/mainPage/PoliceDepartment.jpg"></a></div>
+    <div class="topOfSmallBlocks"><a href=" {{ route('departments') }} ">Departments</a></div>
+    <div class="smallBlocks"><a href=" {{ route('departments') }} "> <img src="/images/mainPage/PoliceDepartment.jpg"></a></div>
     </div>
     <!--  -->
     <div class="navigationBlocks">
@@ -20,7 +20,7 @@
     <div class="topOfSmallBlocks"><a href="#">Crime news</a></div>
     <div class="smallBlocks"><a href="#"> <img src="/images/mainPage/crime_news.jpg"></a></div>
     </div>
-    <!--  -->
+    <!--  --> 
     <!--  -->
 <div>
 </div>
