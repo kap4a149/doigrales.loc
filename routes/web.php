@@ -20,3 +20,9 @@ Route::get('/', 'MainController@mainPage')->name('home');
 
 //This is the departments page
 Route::get('/departments', 'MainController@departments')->name('departments');
+
+//Open list of news
+Route::get('/news', 'MainController@allNews')->name('allNews');
+
+//Open full news
+Route::get('/news/{news_name}', 'MainController@fullNews')->where('news_name','[a-zA-Z0-9_-]+'); 

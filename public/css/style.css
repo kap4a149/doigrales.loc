@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Mukta+Mahee');
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
 
 *{
     margin:0;
@@ -260,4 +261,141 @@ table{
     border: 1px solid rgb(43, 63, 60);
     background:rgba(209, 5, 5, 0.355);
     color:rgb(0, 20, 24);
+}
+
+/* Start of News block */
+
+.PageName{
+    margin-left: 40%;
+    padding-top: 2%;
+    font-family: 'Krona One', sans-serif;
+    font-size: 3em;
+}
+
+.PageName_Departments{
+    margin-left: 35%;
+    padding-top: 2%;
+    font-family: 'Krona One', sans-serif;
+    font-size: 3em;
+}
+
+.mainBlock{
+    width: 70%;
+    height: auto;
+    margin-left: 12%;
+    border: 1px solid rgba(68, 62, 62, 0.473);
+    box-shadow: 0 0 50px rgba(209, 5, 5, 0.355);
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background:rgba(55, 40, 80, 0.071);
+    padding-bottom: 1%;
+}
+
+.newsBlock{
+    width:110%;
+    height: 100px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.photo{
+    width: 80px;
+    height: 80px;
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+}
+
+.photo > img{
+    width: 80px;
+    height: 80px;
+}
+
+.articleName{
+    width: 80%;
+    height: 20px;
+    float: right;
+    margin-right: 9.5%;
+    margin-top: 1%;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+.description{
+    width: 80%;
+    height: 35px;
+    margin-top: 1.2%;
+    margin-left: 10.3%;
+}
+
+.category{
+    width: 25%;
+    height: 20px;
+    float: left;
+    margin-top: -3.3%;
+    margin-left: 10.3%;
+}
+
+.category > a{
+    color: rgb(42, 0, 194);
+    text-decoration: underline;
+}
+
+.time{
+    width: 15%;
+    height: 20px;
+    float: right;
+    margin-top: -3.3%;
+    margin-right: 9.4%;
+}
+
+.hr_news{
+    width: 97%;
+    margin-left: 1.5%;
+}
+
+.hr_news:last-of-type{
+visibility: hidden;
+}
+
+.bigLink{
+    height: 100%;
+    display: block;
+    color: #000000;
+    z-index: 2;
+}
+
+/* Start of fullNews.blade.php */
+
+.full_name{
+    width: 90%;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    font-style: bold;
+    margin-left: 7%;
+    text-align: center;
+}
+
+.full_image{
+    margin-top: 13%;
+    margin-left: 22%;
+    width: 550px;
+    height: 300px;
+    padding-bottom: 3%;
+}
+
+.full_image > img{
+    width: 550px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 0px 100px rgba(0, 0, 0, 0.474);
+
+}
+
+.full_text{
+    width: 70%;
+    margin-left: 18%;
+    font-family: 'Mukta Mahee', sans-serif; 
+    font-weight: bold;    
 }

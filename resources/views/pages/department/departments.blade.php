@@ -1,6 +1,7 @@
 @extends('Layout/mainLayout')
 
 @section('content')
+<h1 class="PageName_Departments">Departments</h1>
 
 <div id="table">
 

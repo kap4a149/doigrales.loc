@@ -17,8 +17,8 @@
     </div>
     <!--  -->
     <div class="navigationBlocks">
-    <div class="topOfSmallBlocks"><a href="#">Crime news</a></div>
-    <div class="smallBlocks"><a href="#"> <img src="/images/mainPage/crime_news.jpg"></a></div>
+    <div class="topOfSmallBlocks"><a href=" {{ route('allNews') }} ">Crime news</a></div>
+    <div class="smallBlocks"><a href=" {{ route('allNews') }} "> <img src="/images/mainPage/crime_news.jpg"></a></div>
     </div>
     <!--  --> 
     <!--  -->

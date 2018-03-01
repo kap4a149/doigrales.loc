@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href= {{ URL::asset('css/style.css') }} rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>{{ $title }}</title>
 </head>
 <body>
     <!-- Start og header -->
