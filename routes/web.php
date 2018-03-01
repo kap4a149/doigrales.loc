@@ -26,3 +26,12 @@ Route::get('/news', 'MainController@allNews')->name('allNews');
 
 //Open full news
 Route::get('/news/{news_name}', 'MainController@fullNews')->where('news_name','[a-zA-Z0-9_-]+'); 
+
+//Open all news by category
+Route::get('/news/category/{category}', 'MainController@showByCategories')->where('category', '[A-Za-z0-9_-]+');
+
+//Open full news by category
+Route::get('/{selectedCategory}/{news_name}', 'MainController@fullNews')->where([
+                                                                                'Selectedcategory' =>'[a-zA-Z0-9_-]', 
+                                                                                'news_name','[a-zA-Z0-9_-]+'
+                                                                                ]); 

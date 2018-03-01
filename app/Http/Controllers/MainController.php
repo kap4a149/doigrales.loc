@@ -37,7 +37,7 @@ class MainController extends Controller
 
     public function allNews(){
         $title = 'News';
-        $allNews = News::select('name', 'description', 'nameurl', 'category', 'time', 'image')->take(5)->get();
+        $allNews = News::select('name', 'description', 'nameurl', 'category', 'time', 'image')->take(6)->get();
 
         return view('pages/news/AllNews')->with([
                                                 'allNews' => $allNews,
@@ -46,13 +46,22 @@ class MainController extends Controller
     }
 
     public function fullNews($news_name){
-        $title = 'News';
         $fullNews = News::select('name', 'text', 'nameurl', 'image')->where('nameurl', $news_name)->first();
+        $title = 'sss';        
 
         return view('pages/news/fullNews')->with([
                                                 'fullNews' => $fullNews,
                                                 'title' => $title
                                                 ]);
+    }
+
+
+    public function showByCategories($category){
+        $showByCategory = News::select('name', 'description', 'nameurl', 'category', 'time', 'image')->where('category', $category)->take(6)->get();
+        return view('pages/news/byCategory')->with([
+                                                    'title' => $category    ,
+                                                    'showByCategory' => $showByCategory
+                                                   ]);
     }
 
 }
